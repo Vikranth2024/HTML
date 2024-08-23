@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="feedbackForm" action="mailto:kalvium.com" method="post" enctype="text/plain">
+        <!-- Text Input for User Name -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+  
+        <br /><br />
+        <!-- Theme Selection Dropdown -->
+        <label for="theme">Theme:</label>
+        <select name="theme" id="theme" required>
+          <option value="nature">Nature</option>
+          <option value="technology">Technology</option>
+          <option value="food">Food</option>
+          <option value="travel">Travel</option>
+        </select>
+  
+        <br /><br />
+        <!-- Textarea for Comments/Feedback -->
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback" rows="4" cols="50" required></textarea>
+  
+        <br /><br />
+        <!-- Radio Buttons for Rating Experience -->
+        <label>Rate your experience:</label>
+        <input type="radio" name="experience" id="experience_excellent" value="excellent" />
+        <label for="experience_excellent">Excellent</label>
+        <input type="radio" name="experience" id="experience_good" value="good" />
+        <label for="experience_good">Good</label>
+        <input type="radio" name="experience" id="experience_average" value="average" />
+        <label for="experience_average">Average</label>
+        <input type="radio" name="experience" id="experience_poor" value="poor" />
+        <label for="experience_poor">Poor</label>
+  
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+  
+</body>
+</html>

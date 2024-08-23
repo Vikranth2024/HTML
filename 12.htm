@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="name1" data-a1="Vikranth_s">I am Vikranth</p>
+    <p id="dob" >12-02-2006</p>
+    <script>
+       let p = document.getElementById("name1");
+       console.log(p.dataset.a1);
+       p.dataset.a1=p.dataset.a1.slice(0,3);
+       console.log(p.dataset.a1);
+    </script>
+</body>
+</html>
